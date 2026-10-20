@@ -425,8 +425,15 @@ probability and get the bounds.</p>
 <style>
 .main-container { max-width: 1400px !important; }
 </style>
-<iframe role="img" src="data:text/html; charset=utf-8;charset=utf-8,%3C%21doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%20%20%3Chead%3E%0A%20%20%20%20%3Cmeta%20charset%3D%22UTF%2D8%22%20%2F%3E%0A%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice%2Dwidth%2C%20initial%2Dscale%3D1%2E0%22%20%2F%3E%0A%20%20%20%20%3Ctitle%3EShiny%20App%3C%2Ftitle%3E%0A%20%20%20%20%3Cscript%0A%20%20%20%20%20%20src%3D%22%2E%2Fshinylive%2Fload%2Dshinylive%2Dsw%2Ejs%22%0A%20%20%20%20%20%20type%3D%22module%22%0A%20%20%20%20%3E%3C%2Fscript%3E%0A%20%20%20%20%3Cscript%20type%3D%22module%22%3E%0A%20%20%20%20%20%20import%20%7B%20runExportedApp%20%7D%20from%20%22%2E%2Fshinylive%2Fshinylive%2Ejs%22%3B%0A%20%20%20%20%20%20runExportedApp%28%7B%0A%20%20%20%20%20%20%20%20id%3A%20%22root%22%2C%0A%20%20%20%20%20%20%20%20appEngine%3A%20%22r%22%2C%0A%20%20%20%20%20%20%20%20relPath%3A%20%22%22%2C%0A%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%3C%2Fscript%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22%2E%2Fshinylive%2Fstyle%2Dresets%2Ecss%22%20%2F%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22%2E%2Fshinylive%2Fshinylive%2Ecss%22%20%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fhead%3E%0A%20%20%3Cbody%3E%0A%20%20%20%20%0A%20%20%20%20%3Cdiv%20style%3D%22height%3A%20100vh%3B%20width%3A%20100vw%22%20id%3D%22root%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%0A%20%20%3C%2Fbody%3E%0A%3C%2Fhtml%3E%0A" style="width: 100%; height: 1100px; border: 1px solid #ddd;" allow="cross-origin-isolated">
-</iframe>
+<div id="app-box">
+
+</div>
+<script>
+  // The box is created here so that knitting does not copy the app into the file
+  document.getElementById("app-box").innerHTML =
+    '<iframe src="https://erguldemir.github.io/normal-app/" ' +
+    'style="width:100%; height:1100px; border:1px solid #ddd;"></iframe>';
+</script>
 <p><a href="https://erguldemir.github.io/normal-app/">Open the app in
 full screen</a></p>
 </div>
